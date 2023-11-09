@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(235, 235, 235);
+  font-size: 15px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(166, 166, 166);
+  border-radius: 10px;
+  width: 70%;
+}
+
+.edit_form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(166, 166, 166);
+  border-radius: 10px;
+  width: 70%;
+  display: none;
+  transition: 2s ease-in all;
+}
+
+.item_display_container {
+  background-color: rgb(166, 166, 166);
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(235, 235, 235);
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: start;
+  min-width: 40px;
+  font-size: 13px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(235, 235, 235);
+}
+
+button {
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.addbtn {
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+.addbtn:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+.myicon:hover {
+  color: rgb(38, 38, 38);
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  padding-left: 10px;
+  font-size: 10px;
+  height: 20px;
+  min-width: 200px;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+.header {
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(208, 208, 208);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin: 15px 0px;
+  text-decoration: dotted;
+}
+
+.header > p {
+  margin: none;
+  font-size: 11px;
+}

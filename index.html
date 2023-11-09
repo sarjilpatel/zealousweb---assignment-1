@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="header" id="form_container">
+      <h1>ZEALOUSWEB ASSIGNMENT - 1</h1>
+      <p>
+        <b>Problem Statement - </b>Perform CRUD operations using javascript
+        cookies
+      </p>
+    </div>
+    <div class="form_container" id="form_container">
+      <div class="input_container">
+        <input type="number" name="id" id="id" placeholder="ID" />
+      </div>
+      <div class="input_container">
+        <input type="text" name="name" id="name" placeholder="NAME" />
+      </div>
+      <div class="input_container">
+        <input type="text" name="email" id="email" placeholder="EMAIL" />
+      </div>
+      <button class="addbtn" onclick="addData()">Add</button>
+    </div>
+
+    <div class="edit_form_container" id="edit_form_container">
+      <div class="input_container">
+        <input type="text" name="id" id="editid" disabled />
+      </div>
+      <div class="input_container">
+        <input type="text" name="name" id="editname" placeholder="NAME" />
+      </div>
+      <div class="input_container">
+        <input type="text" name="email" id="editemail" placeholder="EMAIL" />
+      </div>
+      <button class="addbtn" onclick="editData()">Edit Data</button>
+    </div>
+
+    <div class="item_display_container" id="item_display_container">
+      <table id="display_table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+          </tr>
+        </thead>
+        <tbody id="display_table_rows"></tbody>
+      </table>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
